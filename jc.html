@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"type="text/css">
+    <title>shahabi</title>
+</head>
+<body>
+    <h1> استاد سلام✋ </h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <input class="num" id="num1" type="text"placeholder="لطفا عدد اول را وارد کنید" required>
+    <br>
+    <br>
+    <input class="num" id="num2" type="text"placeholder="لطفا عدد دوم را وارد کنید" required>
+    <br>
+    <br>
+    <input class="num" id="javab" type="text"placeholder="جواب" readonly>
+    <br>
+<input type="button" value="جمع" onclick="jam()">
+<input type="button" value="تفریق" onclick="tafrigh()">
+<input type="button" value="ضرب" onclick="zarb()">
+<input type="button" value="تقسیم" onclick="taghsim()">
+<input type="button" value="باقی مانده" onclick="baghimand()">
+</body>
+<script>
+  
+    function jam () {
+        var a = Number(document.getElementById("num1").value);
+        var b = Number(document.getElementById("num2").value);
+    document.getElementById("javab").value = a + b;
+    }
+    function tafrigh () {
+        var a = Number(document.getElementById("num1").value);
+        var b = Number(document.getElementById("num2").value);
+    document.getElementById("javab").value = a - b;
+    }
+    function zarb () {
+        var a = Number(document.getElementById("num1").value);
+        var b = Number(document.getElementById("num2").value);
+    document.getElementById("javab").value = a * b;
+    }
+    function taghsim () {
+        var a = Number(document.getElementById("num1").value);
+        var b = Number(document.getElementById("num2").value);
+    document.getElementById("javab").value = a / b;
+    }
+    function baghimand () {
+        var a = Number(document.getElementById("num1").value);
+        var b = Number(document.getElementById("num2").value);
+    document.getElementById("javab").value = a % b;
+    }
+</script>
+</html>
